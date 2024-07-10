@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Tenkuragi
+        </div>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Profil</a></li>
+            <li><a href="">Contac</a></li>
+        </ul>
+
+        <div class="burger">
+            <input type="checkbox">
+
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <script>
+        const tglInput = document.querySelector('.burger input')
+        const nav = document.querySelector('nav ul')
+
+        tglInput.addEventListener('click', function(){
+            nav.classList.toggle('slide')
+        })
+    </script>
+</body>
+</html>
